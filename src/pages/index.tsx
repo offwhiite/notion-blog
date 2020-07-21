@@ -11,8 +11,6 @@ export default () => (
     <div className={sharedStyles.layout}>
       <h1>まめのウェブメモ</h1>
 
-      <Features />
-
       <div className="explanation">
         <p>
           以下の内容をメモしていく予定
