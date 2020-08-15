@@ -124,7 +124,7 @@
 }
 
 .post {
-  max-width: calc(600px + 30%);
+  max-width: calc(600px + 30%); /* Blogのpostはmax の30%をとる */
   margin: 0 auto;
   padding: 5%;
 }
