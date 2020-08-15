@@ -6,7 +6,7 @@
 
   --bg: #fff;
   --fg: #000;
-  --accents-1: #111;
+  --accents-1: #333;
   --accents-2: #333;
   --accents-3: #888;
   --geist-foreground: #000;
@@ -38,11 +38,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  background-image: radial-gradient(#ddd 1px, transparent 1px),
-    radial-gradient(#ddd 1px, transparent 1px);
+  /* background-image: radial-gradient(#ddd 10px, transparent 1px),radial-gradient(#ddd 5px, transparent 1px);
   background-position: 0 0, 25px 25px;
   background-attachment: fixed;
   background-size: 50px 50px;
+  background-repeat:no-repeat; */
 
   /* Hack */
   overflow-x: hidden;
@@ -279,16 +279,24 @@ mark {
 
 h1 {
   margin: var(--gap-double) 0 calc(0.5 * var(--gap)) 0;
-  font-size: 2.25rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accents-1);
   letter-spacing: -0.05rem;
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.5rem;
   letter-spacing: -0.02rem;
-  color: var(--accents-3);
+  color: var(--accents-2);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: -0.02rem;
+  color: var(--accents-2);
 }
 
 .video {
