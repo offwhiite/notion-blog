@@ -4,6 +4,10 @@
   display: block;
   height: auto;
 }
+.layout div {
+  max-width: 98%;
+  width: 900px;
+}
 
 .layout h1,
 .layout h2 {

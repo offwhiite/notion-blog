@@ -17,7 +17,7 @@
   justify-content: space-between;
   text-align: center;
   border: 1px solid #eaeaea;
-  width: 400px;
+  width: 80%;
   padding: 16px;
   border-radius: 5px;
 }
@@ -124,7 +124,7 @@
 }
 
 .post {
-  max-width: calc(600px + 10%);
+  max-width: calc(600px + 30%);
   margin: 0 auto;
   padding: 5%;
 }
