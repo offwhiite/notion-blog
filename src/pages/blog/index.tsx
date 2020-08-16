@@ -62,7 +62,7 @@ export default ({ posts = [], preview }) => {
           </div>
         </div>
       )}
-      <div className={`${sharedStyles.layout} ${blogStyles.blogIndex}`}>
+      <div className={blogStyles.blogIndex}>
         <h1>My Notion Blog</h1>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
@@ -83,9 +83,6 @@ export default ({ posts = [], preview }) => {
               {post.Authors.length > 0 && (
                 <div className="authors">By: {post.Authors.join(' ')}</div>
               )}
-              {post.Date && (
-                <div className="posted">Posted: {getDateStr(post.Date)}</div>
-              )}
               <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
@@ -93,6 +90,9 @@ export default ({ posts = [], preview }) => {
                   textBlock(block, true, `${post.Slug}${idx}`)
                 )}
               </p>
+              {post.Date && (
+                <div className="posted">Posted: {getDateStr(post.Date)}</div>
+              )}
             </div>
           )
         })}

@@ -158,7 +158,7 @@ const RenderPost = ({ post, redirect, preview }) => {
         {post.Date && (
           <div className="posted">Posted: {getDateStr(post.Date)}</div>
         )}
-
+        <span>tag:{post.Tag}</span>
         <hr />
 
         {(!post.content || post.content.length === 0) && (

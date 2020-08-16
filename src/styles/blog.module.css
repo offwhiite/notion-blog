@@ -1,5 +1,7 @@
 .blogIndex {
   padding: 0 5%;
+  align-content: center;
+  text-align: center;
 }
 
 .blogIndex h1 {
@@ -63,8 +65,9 @@
 }
 
 .postPreview {
-  max-width: 600px;
+  max-width: 700px;
   margin: 10px auto;
+  text-align: left;
   border-bottom: 1px solid rgba(0, 0, 0, 0.8);
 }
 
@@ -120,7 +123,10 @@
 }
 
 .postPreview :global(.posted) {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
+  color: #888;
+  font-size: 0.7rem;
+  text-align: right;
 }
 
 .post {
