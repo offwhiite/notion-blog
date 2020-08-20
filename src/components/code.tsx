@@ -10,7 +10,8 @@ const Code = ({ children, language = 'javascript' }) => {
             __html: Prism.highlight(
               children,
               Prism.languages[language.toLowerCase()] ||
-                Prism.languages.javascript
+                Prism.languages.javascript,
+              ''
             ),
           }}
         />
