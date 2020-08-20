@@ -1,15 +1,55 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  justify-content: flex-start;
+}
+.testContainer {
+  align-self: flex-start;
+}
+.profileContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.profileUserName {
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.profileImage {
+  padding: 0 3rem;
+}
+
+.profileImage img {
+  border-radius: 50%;
+}
+
+.profileUserSetting {
+  word-wrap: normal;
+  margin-top: 1.1rem;
+}
+
 .links {
-  display: block;
   margin: 1rem auto;
-  max-width: 500px;
-  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  align-self: flex-end;
+  vertical-align: bottom;
+  width: 100%;
 }
 
 .links a {
   width: 48px;
   height: 48px;
-  margin: 0 10px;
-  display: inline-block;
   transition: opacity 200ms ease;
 }
 
@@ -17,20 +57,31 @@
   opacity: 0.6;
 }
 
-.avatar {
-  display: block;
-  text-align: center;
-  margin: 1rem 0;
+.carrierContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+.title {
+  padding: 0 20px;
+}
+.table {
+  width: 60vw;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.avatar img {
-  height: 120px;
+.table tr {
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
 }
 
-.name {
-  text-align: center;
+.table tr:hover {
+  background-color: #d4f0fd;
 }
 
-.name a {
-  color: inherit;
+.table th,
+.table td {
+  text-align: start;
+  padding: 30px 20px;
 }

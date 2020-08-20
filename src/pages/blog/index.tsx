@@ -63,7 +63,9 @@ export default ({ posts = [], preview }) => {
         </div>
       )}
       <div className={blogStyles.blogIndex}>
-        <h1>My Notion Blog</h1>
+        <div className={sharedStyles.siteTitle}>KuroMame Dev Blog</div>
+
+        <h1>Blog</h1>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
@@ -91,7 +93,7 @@ export default ({ posts = [], preview }) => {
                 )}
               </p>
               {post.Date && (
-                <div className="posted">Posted: {getDateStr(post.Date)}</div>
+                <div className="posted">{getDateStr(post.Date)}</div>
               )}
             </div>
           )

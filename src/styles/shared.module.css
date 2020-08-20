@@ -4,7 +4,7 @@
   display: block;
   height: auto;
 }
-.layout div {
+.layout div　 {
   max-width: 98%;
   width: 80%;
 }
@@ -12,4 +12,9 @@
 .layout h1,
 .layout h2 {
   text-align: center;
+}
+.siteTitle {
+  font-size: 3rem;
+  font-family: var(--font-mono);
+  color: #333;
 }

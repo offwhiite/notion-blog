@@ -2,7 +2,8 @@
   display: block;
   min-height: 64px;
   padding: 2em 0;
-  text-align: center;
+  text-align: end;
+  width: 80%;
   letter-spacing: -0.02em;
 }
 
@@ -28,6 +29,6 @@
 
 @media (max-width: 600px) {
   .header {
-    padding: .5em 0 2em;
+    padding: 0.5em 0 2em;
   }
 }
