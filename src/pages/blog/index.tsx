@@ -65,7 +65,7 @@ export default ({ posts = [], preview }) => {
       <div className={blogStyles.blogIndex}>
         <div className={sharedStyles.siteTitle}>KuroMame Dev Blog</div>
 
-        <h1>Blog</h1>
+        <h2>日々の実践や学習を記録して復習するためのメモ</h2>
         {posts.length === 0 && (
           <p className={blogStyles.noPosts}>There are no posts yet</p>
         )}
